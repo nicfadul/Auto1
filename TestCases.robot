@@ -10,12 +10,7 @@ Suite Teardown  Close Browser
 
 *** Test Cases ***
 TC1 - Check Filters on Advanced Searh Page
-    Given Open URL AutoHero
-    And User is on Advanced Search Page
-    When User Select Filter for First registration
-    And User Select Filter for Price Decsending
-    Then Verify all cars are filtered by First Registration
-    And Verify all Cars are Filtered By Price Descending
+    Open URL Ascentify Player
 
 
 *** Keywords ***
@@ -35,11 +30,11 @@ Open URL Locally
     Create Webdriver    Chrome    executable_path=D:/a/1/s/node_modules/chromedriver/lib/chromedriver/chromedriver.exe
     
     # Open Browser on Local Machine
-    # Open Browser    https://www.autohero.com/de/search/    chrome
+    # Open Browser    https://ascentifyplay-qa.ascentify.com/auth/login    chrome
     Maximize Browser Window
 
-Open URL AutoHero
-    Go To    https://www.autohero.com/
+Open URL Ascentify Player
+    Go To    https://ascentifyplay-qa.ascentify.com/auth/login
 
 
 
